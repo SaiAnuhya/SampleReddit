@@ -9,12 +9,23 @@
 /* Begin PBXBuildFile section */
 		81846A4325874EC9006EC3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A4225874EC9006EC3DE /* AppDelegate.swift */; };
 		81846A4525874EC9006EC3DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A4425874EC9006EC3DE /* SceneDelegate.swift */; };
-		81846A4725874EC9006EC3DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A4625874EC9006EC3DE /* ViewController.swift */; };
 		81846A4A25874EC9006EC3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81846A4825874EC9006EC3DE /* Main.storyboard */; };
 		81846A4C25874ECB006EC3DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81846A4B25874ECB006EC3DE /* Assets.xcassets */; };
 		81846A4F25874ECB006EC3DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81846A4D25874ECB006EC3DE /* LaunchScreen.storyboard */; };
 		81846A5A25874ECB006EC3DE /* SampleRedditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A5925874ECB006EC3DE /* SampleRedditTests.swift */; };
 		81846A6525874ECB006EC3DE /* SampleRedditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A6425874ECB006EC3DE /* SampleRedditUITests.swift */; };
+		81846A7A25874F8B006EC3DE /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A7625874F8B006EC3DE /* FeedResponse.swift */; };
+		81846A7B25874F8B006EC3DE /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A7725874F8B006EC3DE /* NetworkClient.swift */; };
+		81846A7C25874F8B006EC3DE /* DataSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A7825874F8B006EC3DE /* DataSerializer.swift */; };
+		81846A7D25874F8B006EC3DE /* FeedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A7925874F8B006EC3DE /* FeedRequest.swift */; };
+		81846A8325875040006EC3DE /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A8225875040006EC3DE /* FeedModel.swift */; };
+		81846A8C2587508D006EC3DE /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A8B2587508D006EC3DE /* TableViewModel.swift */; };
+		81846A97258750DB006EC3DE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A94258750DB006EC3DE /* TableViewCell.swift */; };
+		81846A98258750DB006EC3DE /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A95258750DB006EC3DE /* CustomImageView.swift */; };
+		81846A99258750DB006EC3DE /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A96258750DB006EC3DE /* ViewExtension.swift */; };
+		81846A9F258751AC006EC3DE /* sampleInputTest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81846A9D258751AC006EC3DE /* sampleInputTest.txt */; };
+		81846AA0258751AC006EC3DE /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846A9E258751AC006EC3DE /* MockNetworkClient.swift */; };
+		81846AA825875234006EC3DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81846AA725875234006EC3DE /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +49,6 @@
 		81846A3F25874EC9006EC3DE /* SampleReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81846A4225874EC9006EC3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81846A4425874EC9006EC3DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		81846A4625874EC9006EC3DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81846A4925874EC9006EC3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81846A4B25874ECB006EC3DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81846A4E25874ECB006EC3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,18 @@
 		81846A6025874ECB006EC3DE /* SampleRedditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleRedditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81846A6425874ECB006EC3DE /* SampleRedditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRedditUITests.swift; sourceTree = "<group>"; };
 		81846A6625874ECB006EC3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81846A7625874F8B006EC3DE /* FeedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		81846A7725874F8B006EC3DE /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		81846A7825874F8B006EC3DE /* DataSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSerializer.swift; sourceTree = "<group>"; };
+		81846A7925874F8B006EC3DE /* FeedRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRequest.swift; sourceTree = "<group>"; };
+		81846A8225875040006EC3DE /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		81846A8B2587508D006EC3DE /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		81846A94258750DB006EC3DE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		81846A95258750DB006EC3DE /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		81846A96258750DB006EC3DE /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		81846A9D258751AC006EC3DE /* sampleInputTest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampleInputTest.txt; sourceTree = "<group>"; };
+		81846A9E258751AC006EC3DE /* MockNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
+		81846AA725875234006EC3DE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../CodingChallenge/CodingChallenge/ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +121,13 @@
 		81846A4125874EC9006EC3DE /* SampleReddit */ = {
 			isa = PBXGroup;
 			children = (
+				81846A93258750B6006EC3DE /* Views */,
+				81846A8A2587505D006EC3DE /* ViewModel */,
+				81846A8125875028006EC3DE /* Model */,
+				81846A7525874F25006EC3DE /* Networking */,
 				81846A4225874EC9006EC3DE /* AppDelegate.swift */,
+				81846AA725875234006EC3DE /* ViewController.swift */,
 				81846A4425874EC9006EC3DE /* SceneDelegate.swift */,
-				81846A4625874EC9006EC3DE /* ViewController.swift */,
 				81846A4825874EC9006EC3DE /* Main.storyboard */,
 				81846A4B25874ECB006EC3DE /* Assets.xcassets */,
 				81846A4D25874ECB006EC3DE /* LaunchScreen.storyboard */,
@@ -113,6 +139,8 @@
 		81846A5825874ECB006EC3DE /* SampleRedditTests */ = {
 			isa = PBXGroup;
 			children = (
+				81846A9E258751AC006EC3DE /* MockNetworkClient.swift */,
+				81846A9D258751AC006EC3DE /* sampleInputTest.txt */,
 				81846A5925874ECB006EC3DE /* SampleRedditTests.swift */,
 				81846A5B25874ECB006EC3DE /* Info.plist */,
 			);
@@ -126,6 +154,43 @@
 				81846A6625874ECB006EC3DE /* Info.plist */,
 			);
 			path = SampleRedditUITests;
+			sourceTree = "<group>";
+		};
+		81846A7525874F25006EC3DE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				81846A7825874F8B006EC3DE /* DataSerializer.swift */,
+				81846A7925874F8B006EC3DE /* FeedRequest.swift */,
+				81846A7625874F8B006EC3DE /* FeedResponse.swift */,
+				81846A7725874F8B006EC3DE /* NetworkClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		81846A8125875028006EC3DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81846A8225875040006EC3DE /* FeedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81846A8A2587505D006EC3DE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				81846A8B2587508D006EC3DE /* TableViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		81846A93258750B6006EC3DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81846A95258750DB006EC3DE /* CustomImageView.swift */,
+				81846A94258750DB006EC3DE /* TableViewCell.swift */,
+				81846A96258750DB006EC3DE /* ViewExtension.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81846A9F258751AC006EC3DE /* sampleInputTest.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +324,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81846A4725874EC9006EC3DE /* ViewController.swift in Sources */,
+				81846A7A25874F8B006EC3DE /* FeedResponse.swift in Sources */,
+				81846A7D25874F8B006EC3DE /* FeedRequest.swift in Sources */,
+				81846A7C25874F8B006EC3DE /* DataSerializer.swift in Sources */,
+				81846A7B25874F8B006EC3DE /* NetworkClient.swift in Sources */,
+				81846A97258750DB006EC3DE /* TableViewCell.swift in Sources */,
+				81846A99258750DB006EC3DE /* ViewExtension.swift in Sources */,
 				81846A4325874EC9006EC3DE /* AppDelegate.swift in Sources */,
+				81846AA825875234006EC3DE /* ViewController.swift in Sources */,
+				81846A98258750DB006EC3DE /* CustomImageView.swift in Sources */,
+				81846A8C2587508D006EC3DE /* TableViewModel.swift in Sources */,
 				81846A4525874EC9006EC3DE /* SceneDelegate.swift in Sources */,
+				81846A8325875040006EC3DE /* FeedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81846A5A25874ECB006EC3DE /* SampleRedditTests.swift in Sources */,
+				81846AA0258751AC006EC3DE /* MockNetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
